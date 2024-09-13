@@ -1,14 +1,27 @@
-# self-driving-car
-<p align="left">This project is an algorithm of object detection and tracking for self driving car by sensor fusing and kalman filter implementation</p>
 
-###
+# Project Title
 
-<p align="left">. It is required to fuse LIDAR and camera <br>measurements, then track vehicles overtime. The data used in this project are from the Waymo <br>open dataset. Object detection will be done using pre-trained models. An extended Kalman <br>filter will be applied for sensor fusion and tracking.</p>
+This project is an algorithm of object detection and tracking for self driving car by sensor fusing and extended kalman filter implementation
 
-###
+. It is required to fuse LIDAR and camera measurements, then track vehicles overtime. The data used in this project are from the Waymo open dataset. 
+Object detection will be done using pre-trained models. An extended Kalman
+filter will be applied for sensor fusion and tracking.
 
-<div align="center">
-  <img height="960" src="https://github-production-user-asset-6210df.s3.amazonaws.com/106450266/339569491-71404fbb-e9c5-494b-b568-087de4a41006.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240613%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240613T222550Z&X-Amz-Expires=300&X-Amz-Signature=24bada08bce03633e7df9eb765349cff3ceb8ff75082d570671803294c7b030b&X-Amz-SignedHeaders=host&actor_id=106450266&key_id=0&repo_id=814811229"  />
-</div>
 
-###
+## Setup: 
+
+1. The project has been written in python 3.10.8, please make sure you have the latest 
+python version.
+
+2. Before running the project, some libraries must be installed. The required libraries are mentioned in the requirement.txt file. 
+
+3. Download the Waymo open dataset reader toolbox. The Waymo open dataset reader will help reading the dataset, it is light and does the job. It can be downloaded from many sources, for example, you can download it from https://waymo.com/open/ 
+6. After downloading the dataset, copy the sequences into the folder “dataset”. 
+
+7. The object detection is done using two pre-trained models. Download darknet model and the fpn_resnet model. Copy the weights into 
+/tools/objdet_models/darknet/pretrained and 
+/tools/objdet_models/fpn_resnet/pretrained, respectively. 
+
+
+
+
