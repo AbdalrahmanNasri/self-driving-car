@@ -1,5 +1,5 @@
 
-# Project Title
+# self-driving-car
 
 This project is an algorithm of object detection and tracking for self driving car by sensor fusing and extended kalman filter implementation
 
@@ -21,7 +21,6 @@ python version.
 7. The object detection is done using two pre-trained models. Download darknet model and the fpn_resnet model. Copy the weights into 
 /tools/objdet_models/darknet/pretrained and 
 /tools/objdet_models/fpn_resnet/pretrained, respectively. 
-
 
 
 
